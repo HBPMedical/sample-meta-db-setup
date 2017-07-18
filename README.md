@@ -14,7 +14,7 @@ This database contains the metadata of a sample data for testing and debugging p
 Run:
 
 ```console
-$ docker run -i -t --rm -e FLYWAY_HOST=`hostname` hbpmip/sample-meta-db-setup:0.0.0 migrate
+$ docker run -i -t --rm -e FLYWAY_HOST=`hostname` hbpmip/sample-meta-db-setup:0.1.0 migrate
 ```
 
 where the environment variables are:
