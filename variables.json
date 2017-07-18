@@ -1,0 +1,80 @@
+{
+  "code": "root",
+  "groups": [{
+    "code": "all",
+    "groups": [],
+    "variables": [
+      {
+        "methodology": "test",
+        "code": "ID",
+        "type": "integer",
+        "description": "Identifier",
+        "label": "ID"
+      }, {
+        "methodology": "test",
+        "code": "stress_before_test1",
+        "type": "real",
+        "description": "",
+        "label": "Stress Before Test 1"
+      },
+      {
+        "methodology": "test",
+        "code": "score_test1",
+        "type": "real",
+        "description": "",
+        "label": "Score Test 1"
+      },
+      {
+        "methodology": "test",
+        "code": "IQ",
+        "type": "real",
+        "description": "",
+        "label": "IQ"
+      },
+      {
+        "methodology": "test",
+        "code": "cognitive_task2",
+        "type": "real",
+        "description": "",
+        "label": "Cognitive Task 2"
+      },
+      {
+        "methodology": "test",
+        "code": "practice_task2",
+        "type": "real",
+        "description": "",
+        "label": "Practice Task 2"
+      },
+      {
+        "methodology": "test",
+        "code": "response_time_task2",
+        "type": "real",
+        "description": "",
+        "label": "Response Time Task 2"
+      },
+      {
+        "methodology": "test",
+        "code": "college_math",
+        "type": "real",
+        "description": "",
+        "label": "College Math"
+      },
+      {
+        "methodology": "test",
+        "code": "score_math_course1",
+        "type": "real",
+        "description": "",
+        "label": "Score Math Course 1"
+      },
+      {
+        "methodology": "test",
+        "code": "score_math_course2",
+        "type": "real",
+        "description": "",
+        "label": "Score Math Course 2"
+      }
+    ],
+    "label": "All"
+  }],
+  "label": "root"
+}
