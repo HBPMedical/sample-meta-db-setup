@@ -26,6 +26,7 @@ fi
 
 $DOCKER_COMPOSE up -d --remove-orphans meta_db
 $DOCKER_COMPOSE run wait_dbs
+$DOCKER_COMPOSE build meta_db_check
 
 echo
 echo "Test initial database migration"
@@ -35,11 +36,7 @@ $DOCKER_COMPOSE run meta_db_check
 echo
 echo "Test idempotence"
 $DOCKER_COMPOSE run meta_db_setup
-if [ $CIRCLECI ]; then
-  $DOCKER_COMPOSE run meta_db_check_ci
-else
-  $DOCKER_COMPOSE run meta_db_check
-fi
+$DOCKER_COMPOSE run meta_db_check
 
 # Cleanup
 echo

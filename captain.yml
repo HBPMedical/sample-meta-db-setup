@@ -1,4 +1,4 @@
-sample_meta_db_setup:
+target_image:
   build: Dockerfile
   image: hbpmip/sample-meta-db-setup
   pre:
