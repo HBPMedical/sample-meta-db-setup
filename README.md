@@ -1,4 +1,4 @@
-[![CHUV](https://img.shields.io/badge/CHUV-LREN-AF4C64.svg)](https://www.unil.ch/lren/en/home.html) [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/LREN-CHUV/sample-meta-db-setup/blob/master/LICENSE)
+[![CHUV](https://img.shields.io/badge/CHUV-LREN-AF4C64.svg)](https://www.unil.ch/lren/en/home.html) [![License](https://img.shields.io/badge/license-Apache--2.0-blue.svg)](https://github.com/LREN-CHUV/sample-meta-db-setup/blob/master/LICENSE) [![Codacy Badge](https://api.codacy.com/project/badge/Grade/c3ca609e0e51436d9a3278e6cea41432)](https://www.codacy.com/app/hbp-mip/sample-meta-db-setup?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LREN-CHUV/sample-meta-db-setup&amp;utm_campaign=Badge_Grade)
 [![build status](https://gitlab.com/hbpmip/sample-meta-db-setup/badges/master/build.svg)](https://gitlab.com/hbpmip/sample-meta-db-setup/commits/master)
 
 # Setup for database 'meta-db' with the selection of variables for sample-data-db
