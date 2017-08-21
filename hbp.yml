@@ -1,2 +1,95 @@
+description: "Setup for database 'meta-db' with the selection of variables for sample-data-db"
+
+long_description: |
+  This Docker image uses Flyway to manage the database migration scripts for the 'meta-db' database used by MIP.
+
+  This database contains the metadata for sample data useful for testing and debugging purpose.
+
+authors:
+  - author: Ludovic Claude
+    author_email:
+      - ludovic.claude@chuv.ch
+      - ludovic.claude54@gmail.com
+      - ludovic.claude54@googlemail.com
+    organisation:
+      name: LREN-CHUV
+      badge: https://img.shields.io/badge/CHUV-LREN-AF4C64.svg
+      url: https://www.unil.ch/lren/en/home.html
+  - author: Arnaud Jutzeler
+    author_email:
+      - arnaud.jutzeler@chuv.ch
+      - arnaud@ahead-solutions.ch
+    organisation:
+      name: LREN-CHUV
+      badge: https://img.shields.io/badge/CHUV-LREN-AF4C64.svg
+      url: https://www.unil.ch/lren/en/home.html
+
+platform: MIP
+component:
+  mip_building_block: reference
+  nature: docker-image
+
+license:
+  name: Apache 2.0
+  badge: https://img.shields.io/badge/license-Apache--2.0-blue.svg
+  url: https://github.com/LREN-CHUV/sample-meta-db-setup/blob/master/LICENSE
+
+code_repositories:
+  - name: chuv-gitlab/HBPMedical
+    visibility: private
+    url: https://___.chuv.ch/data-factory/sample-meta-db-setup/
+    git_clone: https://___.chuv.ch/data-factory/sample-meta-db-setup.git
+  - name: github/LREN-CHUV
+    visibility: public
+    url: https://github.io/LREN-CHUV/sample-meta-db-setup/
+    git_clone: https://github.io/LREN-CHUV/sample-meta-db-setup.git
+  - name: github/HBPMedical
+    visibility: public
+    url: https://github.io/HBPMedical/sample-meta-db-setup/
+    git_clone: https://github.io/HBPMedical/sample-meta-db-setup.git
+
+code_quality_checks:
+  codacy:
+    badge: https://api.codacy.com/project/badge/Grade/c3ca609e0e51436d9a3278e6cea41432
+    url: "https://www.codacy.com/app/hbp-mip/sample-meta-db-setup?utm_source=github.com&amp;utm_medium=referral&amp;utm_content=LREN-CHUV/sample-meta-db-setup&amp;utm_campaign=Badge_Grade"
+
+testing:
+  unit_testing:
+    sources: ./tests
+    command: ./tests/tesh.sh
+
 release_management:
   current_version: 0.1.0
+  current_code_release: https://github.com/HBPMedical/sample-meta-db-setup/archive/0.1.0.zip
+  current_docker_release: docker pull hbpmip/sample-meta-db-setup:0.1.0
+  release_script: 'publish.sh'
+
+continuous_integration:
+  - name: CircleCI
+    description: "Check style and execute unit tests"
+    url: https://circleci.com/gh/LREN-CHUV/sample-meta-db-setup
+    badge: https://circleci.com/gh/LREN-CHUV/sample-meta-db-setup.svg?style=svg
+    actions:
+      - code_style
+      - unit_tests
+
+distribution:
+  docker_hub:
+    name: hbpmip/sample-meta-db-setup
+    current_tag: 0.1.0
+    url: https://hub.docker.com/r/hbpmip/sample-meta-db-setup/
+    badge: https://img.shields.io/badge/docker-hbpmip%2Fmeta--db--setup-008bb8.svg
+    command: docker pull hbpmip/sample-meta-db-setup:0.1.0
+
+planning:
+  github:
+    name: Issues on Github
+    url: https://github.com/LREN-CHUV/sample-meta-db-setup/issues
+
+related_projects:
+  - name: meta-db-setup
+    mip_building_block: reference
+    relationship: depend-on-other
+  - name: sample-data-db-setup
+    mip_building_block: reference
+    relationship: see-also

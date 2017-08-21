@@ -5,9 +5,8 @@ ARG BUILD_DATE
 ARG VCS_REF
 ARG VERSION
 
-COPY variables.json /src/variables/mip-cde.json
-ENV CDE_DEFINITIONS="mip-cde" \
-    CDE_TARGET_TABLES="MIP_CDE_DATA"
+COPY variables.json /src/variables/sample.json
+ENV DATA_ELEMENTS="sample|SAMPLE_DATA"
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="hbpmip/sample-meta-db-setup" \
