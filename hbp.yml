@@ -78,7 +78,7 @@ distribution:
     name: hbpmip/sample-meta-db-setup
     current_tag: 0.2.0
     url: https://hub.docker.com/r/hbpmip/sample-meta-db-setup/
-    badge: https://img.shields.io/badge/docker-hbpmip%2Fmeta--db--setup-008bb8.svg
+    badge: https://img.shields.io/badge/docker-hbpmip%2Fsample--meta--db--setup-008bb8.svg
     command: docker pull hbpmip/sample-meta-db-setup:0.2.0
 
 planning:
