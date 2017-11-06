@@ -1,12 +1,13 @@
-FROM hbpmip/meta-db-setup:2.0.0
+FROM hbpmip/meta-db-setup:2.1.0
 MAINTAINER Ludovic Claude <ludovic.claude@chuv.ch>
 
 ARG BUILD_DATE
 ARG VCS_REF
 ARG VERSION
 
-COPY variables.json /src/variables/sample.json
-ENV DATA_ELEMENTS="sample|SAMPLE_DATA"
+COPY sample_variables.json /src/variables/sample.json
+COPY churn_variables.json /src/variables/churn.json
+ENV DATA_ELEMENTS="sample|SAMPLE_DATA| churn|CHURN|state,custserv_calls,churn"
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="hbpmip/sample-meta-db-setup" \
