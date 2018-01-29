@@ -7,7 +7,13 @@
       "label": "All",
       "variables": [
         {
-          "code": "ID",
+          "code": "id",
+          "datasets": [
+            "CHUV1",
+            "CHUV2",
+            "CHUV3",
+            "CHUV4"
+          ],
           "description": "Identifier",
           "label": "ID",
           "methodology": "test",
@@ -15,6 +21,11 @@
         },
         {
           "code": "stress_before_test1",
+          "datasets": [
+            "CHUV1",
+            "CHUV2",
+            "CHUV3"
+          ],
           "description": "",
           "label": "Stress Before Test 1",
           "methodology": "test",
@@ -22,13 +33,23 @@
         },
         {
           "code": "score_test1",
+          "datasets": [
+            "CHUV1",
+            "CHUV2",
+            "CHUV4"
+          ],
           "description": "",
           "label": "Score Test 1",
           "methodology": "test",
           "type": "real"
         },
         {
-          "code": "IQ",
+          "code": "iq",
+          "datasets": [
+            "CHUV1",
+            "CHUV3",
+            "CHUV4"
+          ],
           "description": "",
           "label": "IQ",
           "methodology": "test",
@@ -36,6 +57,11 @@
         },
         {
           "code": "cognitive_task2",
+          "datasets": [
+            "CHUV2",
+            "CHUV3",
+            "CHUV4"
+          ],
           "description": "",
           "label": "Cognitive Task 2",
           "methodology": "test",
@@ -43,6 +69,10 @@
         },
         {
           "code": "practice_task2",
+          "datasets": [
+            "CHUV1",
+            "CHUV2"
+          ],
           "description": "",
           "label": "Practice Task 2",
           "methodology": "test",
@@ -50,6 +80,10 @@
         },
         {
           "code": "response_time_task2",
+          "datasets": [
+            "CHUV3",
+            "CHUV4"
+          ],
           "description": "",
           "label": "Response Time Task 2",
           "methodology": "test",
@@ -57,6 +91,9 @@
         },
         {
           "code": "college_math",
+          "datasets": [
+            "CHUV1"
+          ],
           "description": "",
           "label": "College Math",
           "methodology": "test",
@@ -64,6 +101,9 @@
         },
         {
           "code": "score_math_course1",
+          "datasets": [
+            "CHUV2"
+          ],
           "description": "",
           "label": "Score Math Course 1",
           "methodology": "test",
@@ -71,6 +111,9 @@
         },
         {
           "code": "score_math_course2",
+          "datasets": [
+            "CHUV3"
+          ],
           "description": "",
           "label": "Score Math Course 2",
           "methodology": "test",
