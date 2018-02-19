@@ -9,10 +9,18 @@
         {
           "code": "id",
           "datasets": [
-            "CHUV1",
-            "CHUV2",
-            "CHUV3",
-            "CHUV4"
+            {
+              "code": "CHUV1"
+            },
+            {
+              "code": "CHUV2"
+            },
+            {
+              "code": "CHUV3"
+            },
+            {
+              "code": "CHUV4"
+            }
           ],
           "description": "Identifier",
           "label": "ID",
@@ -22,9 +30,15 @@
         {
           "code": "stress_before_test1",
           "datasets": [
-            "CHUV1",
-            "CHUV2",
-            "CHUV3"
+            {
+              "code": "CHUV1"
+            },
+            {
+              "code": "CHUV2"
+            },
+            {
+              "code": "CHUV3"
+            }
           ],
           "description": "",
           "label": "Stress Before Test 1",
@@ -34,9 +48,15 @@
         {
           "code": "score_test1",
           "datasets": [
-            "CHUV1",
-            "CHUV2",
-            "CHUV4"
+            {
+              "code": "CHUV1"
+            },
+            {
+              "code": "CHUV2"
+            },
+            {
+              "code": "CHUV4"
+            }
           ],
           "description": "",
           "label": "Score Test 1",
@@ -46,9 +66,15 @@
         {
           "code": "iq",
           "datasets": [
-            "CHUV1",
-            "CHUV3",
-            "CHUV4"
+            {
+              "code": "CHUV1"
+            },
+            {
+              "code": "CHUV3"
+            },
+            {
+              "code": "CHUV4"
+            }
           ],
           "description": "",
           "label": "IQ",
@@ -58,9 +84,15 @@
         {
           "code": "cognitive_task2",
           "datasets": [
-            "CHUV2",
-            "CHUV3",
-            "CHUV4"
+            {
+              "code": "CHUV2"
+            },
+            {
+              "code": "CHUV3"
+            },
+            {
+              "code": "CHUV4"
+            }
           ],
           "description": "",
           "label": "Cognitive Task 2",
@@ -70,8 +102,12 @@
         {
           "code": "practice_task2",
           "datasets": [
-            "CHUV1",
-            "CHUV2"
+            {
+              "code": "CHUV1"
+            },
+            {
+              "code": "CHUV2"
+            }
           ],
           "description": "",
           "label": "Practice Task 2",
@@ -81,8 +117,12 @@
         {
           "code": "response_time_task2",
           "datasets": [
-            "CHUV3",
-            "CHUV4"
+            {
+              "code": "CHUV3"
+            },
+            {
+              "code": "CHUV4"
+            }
           ],
           "description": "",
           "label": "Response Time Task 2",
@@ -92,7 +132,9 @@
         {
           "code": "college_math",
           "datasets": [
-            "CHUV1"
+            {
+              "code": "CHUV1"
+            }
           ],
           "description": "",
           "label": "College Math",
@@ -102,7 +144,9 @@
         {
           "code": "score_math_course1",
           "datasets": [
-            "CHUV2"
+            {
+              "code": "CHUV2"
+            }
           ],
           "description": "",
           "label": "Score Math Course 1",
@@ -112,7 +156,9 @@
         {
           "code": "score_math_course2",
           "datasets": [
-            "CHUV3"
+            {
+              "code": "CHUV3"
+            }
           ],
           "description": "",
           "label": "Score Math Course 2",
