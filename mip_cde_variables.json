@@ -1878,16 +1878,16 @@
           "description": "Variable used to differentiate datasets.",
           "enumerations": [
             {
-              "code": "edsd",
-              "label": "EDSD"
+              "code": "cde_features_a",
+              "label": "CHUV"
             },
             {
-              "code": "adni",
-              "label": "ADNI"
+              "code": "cde_features_b",
+              "label": "Brescia"
             },
             {
-              "code": "ppmi",
-              "label": "PPMI"
+              "code": "cde_features_c",
+              "label": "Lille"
             }
           ],
           "label": "Dataset",
