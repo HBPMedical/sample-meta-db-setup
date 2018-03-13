@@ -11,21 +11,21 @@
           "description": "State",
           "label": "State",
           "methodology": "test",
-          "type": "string"
+          "type": "text"
         },
         {
           "code": "account_length",
           "description": "Account length",
           "label": "Account length",
           "methodology": "test",
-          "type": "int"
+          "type": "integer"
         },
         {
           "code": "area_code",
           "description": "Area code",
           "label": "Area code",
           "methodology": "test",
-          "type": "string"
+          "type": "text"
         },
         {
           "code": "phone",
@@ -42,7 +42,7 @@
           ],
           "label": "Phone",
           "methodology": "test",
-          "sql_type": "string",
+          "sql_type": "varchar",
           "type": "polynominal"
         },
         {
@@ -60,7 +60,7 @@
           ],
           "label": "International plan",
           "methodology": "test",
-          "sql_type": "string",
+          "sql_type": "varchar",
           "type": "polynominal"
         },
         {
@@ -78,7 +78,7 @@
           ],
           "label": "VMail plan",
           "methodology": "test",
-          "sql_type": "string",
+          "sql_type": "varchar",
           "type": "polynominal"
         },
         {
@@ -86,7 +86,7 @@
           "description": "Number of VMail message",
           "label": "VMail message",
           "methodology": "test",
-          "type": "int"
+          "type": "integer"
         },
         {
           "code": "day_mins",
@@ -177,7 +177,7 @@
           "description": "Customer service calls",
           "label": "Customer service calls",
           "methodology": "test",
-          "type": "int"
+          "type": "integer"
         },
         {
           "code": "churn",
@@ -194,11 +194,11 @@
           ],
           "label": "Churn",
           "methodology": "test",
-          "sql_type": "string",
+          "sql_type": "varchar",
           "type": "polynominal"
         }
       ]
     }
   ],
-  "label": "root"
+  "label": "/"
 }
