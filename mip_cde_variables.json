@@ -1851,15 +1851,15 @@
       "description": "Variable used to differentiate datasets.",
       "enumerations": [
         {
-          "code": "cde_features_a",
+          "code": "desd-synthdata",
           "label": "CHUV"
         },
         {
-          "code": "cde_features_b",
+          "code": "nida-synthdata",
           "label": "Brescia"
         },
         {
-          "code": "cde_features_c",
+          "code": "qqni-synthdata",
           "label": "Lille"
         }
       ],
