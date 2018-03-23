@@ -10,7 +10,9 @@ COPY churn_variables.json /src/variables/churn.json
 COPY mip_cde_variables.json /src/variables/cde_features_a.json
 COPY mip_cde_variables.json /src/variables/cde_features_b.json
 COPY mip_cde_variables.json /src/variables/cde_features_c.json
-ENV DATA_ELEMENTS="sample|SAMPLE_DATA| churn|CHURN|state,custserv_calls,churn cde_features_a|CDE_FEATURES_A|dataset,gender,agegroup,alzheimerbroadcategory cde_features_b|CDE_FEATURES_B|dataset,gender,agegroup,alzheimerbroadcategory cde_features_c|CDE_FEATURES_C|dataset,gender,agegroup,alzheimerbroadcategory"
+COPY mip_cde_variables.json /src/variables/cde_features_mixed.json
+
+ENV DATA_ELEMENTS="sample|SAMPLE_DATA| churn|CHURN|state,custserv_calls,churn cde_features_a|CDE_FEATURES_A|dataset,gender,agegroup,alzheimerbroadcategory cde_features_b|CDE_FEATURES_B|dataset,gender,agegroup,alzheimerbroadcategory cde_features_c|CDE_FEATURES_C|dataset,gender,agegroup,alzheimerbroadcategory cde_features_mixed|CDE_FEATURES_MIXED|dataset,gender,agegroup,alzheimerbroadcategory"
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="hbpmip/sample-meta-db-setup" \
