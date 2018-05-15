@@ -1852,15 +1852,15 @@
       "enumerations": [
         {
           "code": "desd-synthdata",
-          "label": "CHUV"
+          "label": "DESD"
         },
         {
           "code": "nida-synthdata",
-          "label": "Brescia"
+          "label": "NIDA"
         },
         {
           "code": "qqni-synthdata",
-          "label": "Lille"
+          "label": "QQNI"
         }
       ],
       "label": "Dataset",
