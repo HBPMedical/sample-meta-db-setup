@@ -1,5 +1,4 @@
-FROM hbpmip/meta-db-setup:2.4.2
-MAINTAINER Ludovic Claude <ludovic.claude@chuv.ch>
+FROM hbpmip/meta-db-setup:2.5.0
 
 ARG BUILD_DATE
 ARG VCS_REF

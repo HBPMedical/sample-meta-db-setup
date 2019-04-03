@@ -334,19 +334,65 @@
         },
         {
           "code": "pib",
-          "description": "Average PIB SUVR of frontal cortex, anterior cingulate, precuneus cortex, and parietal cortex. ",
+          "description": "Average PIB SUVR of frontal cortex, anterior cingulate, precuneus cortex, and parietal cortex.",
           "label": "PIB",
           "methodology": "adni-merge",
           "type": "real"
         },
         {
           "code": "av45",
-          "description": "AV45 Average AV45 SUVR of frontal, anterior cingulate, precuneus, and parietal cortex\nrelative to the cerebellum",
+          "description": "AV45 Average AV45 SUVR of frontal, anterior cingulate, precuneus, and parietal cortex relative to the cerebellum",
           "label": "AV45",
           "methodology": "adni-merge",
           "type": "real"
         }
       ]
+    },
+    {
+      "code": "proteome",
+      "description": "Protein biology as detected using routine lab chemistries in blood and cerebrospinal fluid specimens as well as in biopsy, measurement of protein-protein interactions, level of antibodies, auto-antibodies, etc.",
+      "groups": [
+        {
+          "code": "csf_proteome",
+          "description": "Protein content of the cerebrospinal fluid",
+          "label": "Cerebrospinal fluid",
+          "variables": [
+            {
+              "code": "ab1_42",
+              "description": "A\u03b2 is the main component of amyloid plaques (extracellular deposits found in the brains of patients with Alzheimer''s disease). Similar plaques appear in some variants of Lewy body dementia and in inclusion body myositis (a muscle disease), while A\u03b2 can also form the aggregates that coat cerebral blood vessels in cerebral amyloid angiopathy. The plaques are composed of a tangle of regularly ordered fibrillar aggregates called amyloid fibers, a protein fold shared by other peptides such as the prions associated with protein misfolding diseases.",
+              "label": "Level of amyloid beta 1-42 peptides in cerebrospinal fluid",
+              "methodology": "mip-cde",
+              "type": "real",
+              "units": ""
+            },
+            {
+              "code": "ab1_40",
+              "description": "A\u03b2 is the main component of amyloid plaques (extracellular deposits found in the brains of patients with Alzheimer''s disease). Similar plaques appear in some variants of Lewy body dementia and in inclusion body myositis (a muscle disease), while A\u03b2 can also form the aggregates that coat cerebral blood vessels in cerebral amyloid angiopathy. The plaques are composed of a tangle of regularly ordered fibrillar aggregates called amyloid fibers, a protein fold shared by other peptides such as the prions associated with protein misfolding diseases.",
+              "label": "Level od amyloid beta 1-40 peptides ion cerebrospinal fluid",
+              "methodology": "mip-cde",
+              "type": "real",
+              "units": ""
+            },
+            {
+              "code": "t_tau",
+              "description": "Tau proteins (or \u03c4 proteins) are proteins that stabilize microtubules. They are abundant in neurons of the central nervous system and are less common elsewhere, but are also expressed at very low levels in CNS astrocytes and oligodendrocytes. Pathologies and dementias of the nervous system such as Alzheimer''s disease and Parkinson''s disease are associated with tau proteins that have become defective and no longer stabilize microtubules properly.",
+              "label": "Total level of tau proteins in cerebrospinal fluid",
+              "methodology": "mip-cde",
+              "type": "real",
+              "units": ""
+            },
+            {
+              "code": "p_tau",
+              "description": "Hyperphosphorylation of the tau protein (tau inclusions, pTau) can result in the self-assembly of tangles of paired helical filaments and straight filaments, which are involved in the pathogenesis of Alzheimer''s disease, frontotemporal dementia, and other tauopathies.",
+              "label": "Level of phosphorylated tau proteins in cerebrospinal fluid ",
+              "methodology": "mip-cde",
+              "type": "real",
+              "units": ""
+            }
+          ]
+        }
+      ],
+      "label": "Entire set of proteins expressed by the patient''s organism at the time of the medical workup"
     },
     {
       "code": "brain_anatomy",
@@ -1635,7 +1681,7 @@
             },
             {
               "code": "updrshy",
-              "description": "The Hoehn and Yahr scale (HY) is a widely used clinical rating scale, which defines broad categories of motor function in Parkinson\u2019s disease (PD). It captures typical patterns of progressive motor impairment.",
+              "description": "The Hoehn and Yahr scale (HY) is a widely used clinical rating scale, which defines broad categories of motor function in Parkinson''s disease (PD). It captures typical patterns of progressive motor impairment.",
               "label": "UPDRS HY - Hoehn and Yahr scale",
               "maxValue": 5,
               "methodology": "mip-cde",
@@ -1649,7 +1695,7 @@
       "variables": [
         {
           "code": "minimentalstate",
-          "description": "The Mini\u2013Mental State Examination (MMSE) or Folstein test is a 30-point questionnaire that is used extensively in clinical and research settings to measure cognitive impairment. It is commonly used to screen for dementia.",
+          "description": "The Mini-Mental State Examination (MMSE) or Folstein test is a 30-point questionnaire that is used extensively in clinical and research settings to measure cognitive impairment. It is commonly used to screen for dementia.",
           "label": "MMSE - Mini Mental State Examination",
           "maxValue": 30,
           "methodology": "mip-cde",
@@ -1760,7 +1806,7 @@
       "variables": [
         {
           "code": "alzheimerbroadcategory",
-          "description": "There will be two broad categories taken into account. Alzheimer''s disease (AD) in which the diagnostic is 100% certain and \"Other\" comprising the rest of Alzheimer''s related categories. The \"Other\" category refers to Alzheime''s related diagnosis which origin can be traced to other pathology eg. vascular. In this category MCI diagnosis can also be found. In summary, all Alzheimer''s related diagnosis that are not pure.",
+          "description": "There will be two broad categories taken into account. Alzheimer''s disease (AD) in which the diagnostic is 100% certain and \"Other\" comprising the rest of Alzheimer''s related categories. The \"Other\" category refers to Alzheimer''s related diagnosis which origin can be traced to other pathology eg. vascular. In this category MCI diagnosis can also be found. In summary, all Alzheimer''s related diagnosis that are not pure.",
           "enumerations": [
             {
               "code": "AD",
@@ -1773,6 +1819,10 @@
             {
               "code": "Other",
               "label": "Other"
+            },
+            {
+              "code": "MCI",
+              "label": "Mild cognitive impairment"
             }
           ],
           "label": "Alzheimer Broad Category",
@@ -1834,7 +1884,19 @@
             },
             {
               "code": "CJD",
-              "label": "Maladie de Creutzfeldt-Jakob"
+              "label": "Creutzfeldt\u2013Jakob disease"
+            },
+            {
+              "code": "FTD",
+              "label": "Frontotemporal dementia"
+            },
+            {
+              "code": "MS",
+              "label": "Multiple sclerosis"
+            },
+            {
+              "code": "CN",
+              "label": "Cognitively normal"
             }
           ],
           "label": "Neurodegeneratives categories",
@@ -1851,16 +1913,16 @@
       "description": "Variable used to differentiate datasets.",
       "enumerations": [
         {
-          "code": "desd-synthdata",
-          "label": "DESD"
+          "code": "edsd",
+          "label": "EDSD"
         },
         {
-          "code": "nida-synthdata",
-          "label": "NIDA"
+          "code": "adni",
+          "label": "ADNI"
         },
         {
-          "code": "qqni-synthdata",
-          "label": "QQNI"
+          "code": "ppmi",
+          "label": "PPMI"
         }
       ],
       "label": "Dataset",
