@@ -1,9 +1,0 @@
-target_image:
-  build: Dockerfile
-  image: hbpmip/sample-meta-db-setup
-  pre:
-    - echo "Building hbpmip/sample-meta-db-setup image"
-  post:
-    - echo "Finished building hbpmip/sample-meta-db-setup image"
-  test:
-    - ./tests/test.sh
