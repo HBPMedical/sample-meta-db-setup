@@ -33,11 +33,11 @@ SELECT is(source::VARCHAR, 'cde_features_c', 'cde_features_c variables should be
 SELECT is(target_table::VARCHAR, 'CDE_FEATURES_C', 'Target cde_features_c table should be present')
   FROM meta_variables where source = 'cde_features_c';
 
-SELECT is(source::VARCHAR, 'cde_features_mixed', 'cde_features_mixed variables should be present')
-  FROM meta_variables where source = 'cde_features_mixed';
+SELECT is(source::VARCHAR, 'mip_cde_features', 'mip_cde_features variables should be present')
+  FROM meta_variables where source = 'mip_cde_features';
 
-SELECT is(target_table::VARCHAR, 'CDE_FEATURES_MIXED', 'Target cde_features_mixed table should be present')
-  FROM meta_variables where source = 'cde_features_mixed';
+SELECT is(target_table::VARCHAR, 'MIP_CDE_FEATURES', 'Target mip_cde_features table should be present')
+  FROM meta_variables where source = 'mip_cde_features';
 
 -- Clean up
 SELECT * FROM finish();

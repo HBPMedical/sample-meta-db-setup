@@ -9,9 +9,9 @@ COPY churn_variables.json /src/variables/churn.json
 COPY mip_cde_variables.json /src/variables/cde_features_a.json
 COPY mip_cde_variables.json /src/variables/cde_features_b.json
 COPY mip_cde_variables.json /src/variables/cde_features_c.json
-COPY mip_cde_variables.json /src/variables/cde_features_mixed.json
+COPY mip_cde_variables.json /src/variables/mip_cde_features.json
 
-ENV TAXONOMIES="sample|SAMPLE_DATA| churn|CHURN|state,custserv_calls,churn cde_features_a|CDE_FEATURES_A|dataset,gender,agegroup,alzheimerbroadcategory cde_features_b|CDE_FEATURES_B|dataset,gender,agegroup,alzheimerbroadcategory cde_features_c|CDE_FEATURES_C|dataset,gender,agegroup,alzheimerbroadcategory cde_features_mixed|CDE_FEATURES_MIXED|dataset,gender,agegroup,alzheimerbroadcategory"
+ENV TAXONOMIES="sample|SAMPLE_DATA| churn|CHURN|state,custserv_calls,churn cde_features_a|CDE_FEATURES_A|dataset,gender,agegroup,alzheimerbroadcategory cde_features_b|CDE_FEATURES_B|dataset,gender,agegroup,alzheimerbroadcategory cde_features_c|CDE_FEATURES_C|dataset,gender,agegroup,alzheimerbroadcategory mip_cde_features|MIP_CDE_FEATURES|dataset,gender,agegroup,alzheimerbroadcategory"
 
 LABEL org.label-schema.build-date=$BUILD_DATE \
       org.label-schema.name="hbpmip/sample-meta-db-setup" \
